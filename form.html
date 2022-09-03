@@ -35,5 +35,31 @@
             <button type="submit">Enviar</button>
         </form>        
     </section>
+<hr>
+    <section>
+       <h2>Checkbox e radio</h2>
+       <!--No checkbox é possível selecionar múltiplos valores, mas para isso é preciso colocar [] para informar ao servidor que trata-se de uma lista-->
+       <!--Já no radio button só é possível marcar um opção.-->
+        <form method="post"> <!--pra enviar lista deve-se pôr em method="post"-->
+            <h3>Voce selecionou: Pizza Mussarela</h3>
+            <p>Escolha os opcionais:</p>
+            <input type="checkbox" name="opcional[]" value="queijo"> + Queijo <br>
+            <input type="checkbox" name="opcional[]" value="calabresa"> + Calabresa <br>
+            <input type="checkbox" name="opcional[]" value="cebola"> + Cebola <br>
+            <input type="checkbox" name="opcional[]" value="azeitona"> + Azeitona <br>
+            <p>Borda Recheada</p>
+            <input type="radio" name="borda" value="sim">Sim <br>
+            <input type="radio" name="borda" value="nao">Não <br>
+            <p>Escolha a bebida:</p>
+            <input type="radio" name="bebida" value="suco">Suco <br>
+            <input type="radio" name="bebida" value="refrigerante">Refri <br>
+            <input disabled type="radio" name="bebida" value="milkshake">milkshake <br>
+            <!--disabled deixa opção inelegível-->
+            <input type="radio" name="bebida" value="agua">Água <br>
+            <input type="radio" name="bebida" value="nenhum">Nada <br>
+            
+            <button type="submit">Fazer pedido</button>
+        </form>
+    </section>
 </body>
 </html>
