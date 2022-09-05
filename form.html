@@ -16,7 +16,7 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-<hr>
+    <hr>
     <section>
         <h2>Tags input e seus tipos</h2>
         <form>
@@ -35,7 +35,7 @@
             <button type="submit">Enviar</button>
         </form>        
     </section>
-<hr>
+    <hr>
     <section>
        <h2>Checkbox e radio</h2>
        <!--No checkbox é possível selecionar múltiplos valores, mas para isso é preciso colocar [] para informar ao servidor que trata-se de uma lista-->
@@ -61,5 +61,47 @@
             <button type="submit">Fazer pedido</button>
         </form>
     </section>
+    <hr>
+    <section>
+        <h2>Button e seus tipos</h2>
+        <form method="get">
+            <label>Nome:*</label><input type="text" name="name"><br>
+            <label>Idade:*</label><input type="number" name="name"><br>
+            <label>Password:*</label><input type="password" name="password"><br>
+            
+            <button type="reset">Limpar</button><button type="submit">Enviar</button><button type="button" disabled>Salvar</button>
+            <!--Importante sempre validar as informações, tanto no front como no back-->
+            
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h2>Select e seus tipos + Textarea</h2>
+        <form onsubmit="" method="get"></form>
+        <label>Semestre</label>
+        <select name="semestre">
+            <option value="Escolha o semestre:"></option>
+            <option value="2020.1">2020.1</option>
+            <option value="2020.2">2020.2</option>
+            <option value="2021.1">2021.1</option>
+            <option value="2021.2">2021.2</option>
+            <option value="2022.1">2022.1</option>
+            <option selected value="2022.2">2022.2</option>
+        </select>
+<br>
+        <label>Disciplina</label>
+        <select name="disciplina">
+            <option value="">Selecione a Disciplina</option>
+            <option value="geografiaurbana">Geografia Urbana</option>
+            <option value="climatolodinamica">Climatologia Dinâmica</option>
+            <option value="geotcnologias">Introdução a Geotecnologias</option>
+            <option value="estagio1">Estágio Supervisionado I</option>
+        </select><br>
+        <label>Comentários:</label><br>
+        <textarea name="comentario" cols="15" rows="5"></textarea><br>
+        <button type="submit">Enviar</button>
+        
+    </section>
+
 </body>
 </html>
